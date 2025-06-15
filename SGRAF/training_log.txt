@@ -1,0 +1,535 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.913 seconds.
+Prefix dict has been built successfully.
+词汇表大小: 1562
+=== 针对性优化训练 ===
+基线性能: R@1 = 37.47%
+优化目标: 进一步提升到45%+
+训练样本: 2910
+验证样本: 363
+使用GPU
+参数量: 28,466,946
+
+开始训练 120 epochs...
+
+Epoch 1/120
+--------------------------------------------------
+Epoch [1][0/146] LR: 0.000027 Time 1.406 Loss 3.3479 InfoNCE 3.2546 Triplet 0.1554
+Epoch [1][25/146] LR: 0.000027 Time 0.035 Loss 3.1654 InfoNCE 3.0786 Triplet 0.1447
+Epoch [1][50/146] LR: 0.000027 Time 0.035 Loss 3.0318 InfoNCE 2.9492 Triplet 0.1377
+Epoch [1][75/146] LR: 0.000027 Time 0.030 Loss 3.0020 InfoNCE 2.9212 Triplet 0.1347
+Epoch [1][100/146] LR: 0.000027 Time 0.044 Loss 2.6911 InfoNCE 2.6276 Triplet 0.1058
+Epoch [1][125/146] LR: 0.000027 Time 0.036 Loss 2.8848 InfoNCE 2.8132 Triplet 0.1195
+验证中...
+Text to Image: R@1: 6.61%, R@5: 23.42%, R@10: 30.85%
+Image to Text: R@1: 6.61%, R@5: 25.62%, R@10: 39.12%
+平均 R@1: 6.61%
+R-sum: 132.23
+💾 最佳模型 - R-sum: 132.23, 平均R@1: 6.61%
+当前最佳: 6.61%
+改进: -30.86%
+距离70%: 63.39%
+
+Epoch 2/120
+--------------------------------------------------
+Epoch [2][0/146] LR: 0.000053 Time 0.035 Loss 2.2032 InfoNCE 2.1656 Triplet 0.0626
+Epoch [2][25/146] LR: 0.000053 Time 0.031 Loss 2.3378 InfoNCE 2.2939 Triplet 0.0732
+Epoch [2][50/146] LR: 0.000053 Time 0.041 Loss 1.9735 InfoNCE 1.9437 Triplet 0.0497
+Epoch [2][75/146] LR: 0.000053 Time 0.032 Loss 2.1408 InfoNCE 2.1059 Triplet 0.0582
+Epoch [2][100/146] LR: 0.000053 Time 0.034 Loss 1.8596 InfoNCE 1.8367 Triplet 0.0381
+Epoch [2][125/146] LR: 0.000053 Time 0.038 Loss 1.7733 InfoNCE 1.7498 Triplet 0.0390
+验证中...
+Text to Image: R@1: 15.43%, R@5: 45.45%, R@10: 61.16%
+Image to Text: R@1: 14.88%, R@5: 48.76%, R@10: 61.98%
+平均 R@1: 15.15%
+R-sum: 247.66
+💾 最佳模型 - R-sum: 247.66, 平均R@1: 15.15%
+当前最佳: 15.15%
+改进: -22.32%
+距离70%: 54.85%
+
+Epoch 3/120
+--------------------------------------------------
+Epoch [3][0/146] LR: 0.000080 Time 0.054 Loss 1.5753 InfoNCE 1.5604 Triplet 0.0249
+Epoch [3][25/146] LR: 0.000080 Time 0.044 Loss 1.3701 InfoNCE 1.3570 Triplet 0.0219
+Epoch [3][50/146] LR: 0.000080 Time 0.036 Loss 1.3749 InfoNCE 1.3621 Triplet 0.0214
+Epoch [3][75/146] LR: 0.000080 Time 0.039 Loss 1.5501 InfoNCE 1.5354 Triplet 0.0245
+Epoch [3][100/146] LR: 0.000080 Time 0.039 Loss 1.5663 InfoNCE 1.5504 Triplet 0.0264
+Epoch [3][125/146] LR: 0.000080 Time 0.038 Loss 1.5398 InfoNCE 1.5222 Triplet 0.0293
+验证中...
+Text to Image: R@1: 18.18%, R@5: 53.99%, R@10: 69.97%
+Image to Text: R@1: 17.36%, R@5: 51.79%, R@10: 71.35%
+平均 R@1: 17.77%
+R-sum: 282.64
+💾 最佳模型 - R-sum: 282.64, 平均R@1: 17.77%
+当前最佳: 17.77%
+改进: -19.70%
+距离70%: 52.23%
+
+Epoch 4/120
+--------------------------------------------------
+Epoch [4][0/146] LR: 0.000080 Time 0.046 Loss 1.3032 InfoNCE 1.2937 Triplet 0.0160
+Epoch [4][25/146] LR: 0.000080 Time 0.035 Loss 1.4023 InfoNCE 1.3880 Triplet 0.0238
+Epoch [4][50/146] LR: 0.000080 Time 0.037 Loss 0.9578 InfoNCE 0.9518 Triplet 0.0099
+Epoch [4][75/146] LR: 0.000080 Time 0.040 Loss 1.7327 InfoNCE 1.7103 Triplet 0.0372
+Epoch [4][100/146] LR: 0.000080 Time 0.049 Loss 1.0811 InfoNCE 1.0742 Triplet 0.0115
+Epoch [4][125/146] LR: 0.000080 Time 0.036 Loss 1.3386 InfoNCE 1.3271 Triplet 0.0191
+验证中...
+Text to Image: R@1: 19.83%, R@5: 63.09%, R@10: 78.51%
+Image to Text: R@1: 21.76%, R@5: 66.12%, R@10: 79.61%
+平均 R@1: 20.80%
+R-sum: 328.93
+💾 最佳模型 - R-sum: 328.93, 平均R@1: 20.80%
+当前最佳: 20.80%
+改进: -16.67%
+距离70%: 49.20%
+
+Epoch 5/120
+--------------------------------------------------
+Epoch [5][0/146] LR: 0.000080 Time 0.040 Loss 0.8273 InfoNCE 0.8241 Triplet 0.0055
+Epoch [5][25/146] LR: 0.000080 Time 0.044 Loss 0.9489 InfoNCE 0.9431 Triplet 0.0097
+Epoch [5][50/146] LR: 0.000080 Time 0.044 Loss 0.9236 InfoNCE 0.9186 Triplet 0.0083
+Epoch [5][75/146] LR: 0.000080 Time 0.043 Loss 0.9692 InfoNCE 0.9639 Triplet 0.0088
+Epoch [5][100/146] LR: 0.000080 Time 0.038 Loss 1.0247 InfoNCE 1.0181 Triplet 0.0111
+Epoch [5][125/146] LR: 0.000080 Time 0.050 Loss 0.9176 InfoNCE 0.9130 Triplet 0.0076
+验证中...
+Text to Image: R@1: 22.59%, R@5: 65.01%, R@10: 78.51%
+Image to Text: R@1: 22.59%, R@5: 65.84%, R@10: 78.79%
+平均 R@1: 22.59%
+R-sum: 333.33
+💾 最佳模型 - R-sum: 333.33, 平均R@1: 22.59%
+当前最佳: 22.59%
+改进: -14.88%
+距离70%: 47.41%
+
+Epoch 6/120
+--------------------------------------------------
+Epoch [6][0/146] LR: 0.000079 Time 0.041 Loss 0.9373 InfoNCE 0.9327 Triplet 0.0076
+Epoch [6][25/146] LR: 0.000079 Time 0.043 Loss 1.1453 InfoNCE 1.1385 Triplet 0.0113
+Epoch [6][50/146] LR: 0.000079 Time 0.042 Loss 1.1297 InfoNCE 1.1235 Triplet 0.0103
+Epoch [6][75/146] LR: 0.000079 Time 0.036 Loss 0.7776 InfoNCE 0.7739 Triplet 0.0062
+Epoch [6][100/146] LR: 0.000079 Time 0.040 Loss 0.9131 InfoNCE 0.9073 Triplet 0.0098
+Epoch [6][125/146] LR: 0.000079 Time 0.042 Loss 0.7603 InfoNCE 0.7576 Triplet 0.0045
+验证中...
+Text to Image: R@1: 25.34%, R@5: 67.49%, R@10: 84.57%
+Image to Text: R@1: 25.07%, R@5: 68.87%, R@10: 82.09%
+平均 R@1: 25.21%
+R-sum: 353.44
+💾 最佳模型 - R-sum: 353.44, 平均R@1: 25.21%
+当前最佳: 25.21%
+改进: -12.26%
+距离70%: 44.79%
+
+Epoch 7/120
+--------------------------------------------------
+Epoch [7][0/146] LR: 0.000078 Time 0.049 Loss 0.7700 InfoNCE 0.7673 Triplet 0.0046
+Epoch [7][25/146] LR: 0.000078 Time 0.035 Loss 0.7342 InfoNCE 0.7316 Triplet 0.0044
+Epoch [7][50/146] LR: 0.000078 Time 0.048 Loss 0.8368 InfoNCE 0.8322 Triplet 0.0076
+Epoch [7][75/146] LR: 0.000078 Time 0.037 Loss 0.9316 InfoNCE 0.9273 Triplet 0.0071
+Epoch [7][100/146] LR: 0.000078 Time 0.037 Loss 0.8236 InfoNCE 0.8197 Triplet 0.0065
+Epoch [7][125/146] LR: 0.000078 Time 0.041 Loss 0.8748 InfoNCE 0.8704 Triplet 0.0073
+验证中...
+Text to Image: R@1: 22.87%, R@5: 69.15%, R@10: 84.85%
+Image to Text: R@1: 24.52%, R@5: 68.04%, R@10: 84.30%
+平均 R@1: 23.69%
+R-sum: 353.72
+当前最佳: 25.21%
+改进: -12.26%
+距离70%: 44.79%
+
+Epoch 8/120
+--------------------------------------------------
+Epoch [8][0/146] LR: 0.000077 Time 0.037 Loss 0.7493 InfoNCE 0.7468 Triplet 0.0042
+Epoch [8][25/146] LR: 0.000077 Time 0.038 Loss 0.6499 InfoNCE 0.6480 Triplet 0.0032
+Epoch [8][50/146] LR: 0.000077 Time 0.037 Loss 0.5584 InfoNCE 0.5575 Triplet 0.0016
+Epoch [8][75/146] LR: 0.000077 Time 0.040 Loss 0.8553 InfoNCE 0.8512 Triplet 0.0068
+Epoch [8][100/146] LR: 0.000077 Time 0.036 Loss 0.7981 InfoNCE 0.7960 Triplet 0.0035
+Epoch [8][125/146] LR: 0.000077 Time 0.043 Loss 0.7323 InfoNCE 0.7282 Triplet 0.0068
+验证中...
+Text to Image: R@1: 25.90%, R@5: 68.60%, R@10: 85.40%
+Image to Text: R@1: 29.48%, R@5: 74.38%, R@10: 85.95%
+平均 R@1: 27.69%
+R-sum: 369.70
+💾 最佳模型 - R-sum: 369.70, 平均R@1: 27.69%
+当前最佳: 27.69%
+改进: -9.78%
+距离70%: 42.31%
+
+Epoch 9/120
+--------------------------------------------------
+Epoch [9][0/146] LR: 0.000075 Time 0.038 Loss 0.7024 InfoNCE 0.7003 Triplet 0.0035
+Epoch [9][25/146] LR: 0.000075 Time 0.045 Loss 0.7773 InfoNCE 0.7749 Triplet 0.0041
+Epoch [9][50/146] LR: 0.000075 Time 0.041 Loss 0.6471 InfoNCE 0.6455 Triplet 0.0027
+Epoch [9][75/146] LR: 0.000075 Time 0.034 Loss 0.5909 InfoNCE 0.5898 Triplet 0.0018
+Epoch [9][100/146] LR: 0.000075 Time 0.035 Loss 0.5973 InfoNCE 0.5960 Triplet 0.0022
+Epoch [9][125/146] LR: 0.000075 Time 0.037 Loss 0.6997 InfoNCE 0.6981 Triplet 0.0027
+验证中...
+Text to Image: R@1: 25.90%, R@5: 71.07%, R@10: 86.78%
+Image to Text: R@1: 29.48%, R@5: 74.10%, R@10: 87.60%
+平均 R@1: 27.69%
+R-sum: 374.93
+当前最佳: 27.69%
+改进: -9.78%
+距离70%: 42.31%
+
+Epoch 10/120
+--------------------------------------------------
+Epoch [10][0/146] LR: 0.000072 Time 0.038 Loss 0.8111 InfoNCE 0.8079 Triplet 0.0053
+Epoch [10][25/146] LR: 0.000072 Time 0.037 Loss 0.4435 InfoNCE 0.4434 Triplet 0.0003
+Epoch [10][50/146] LR: 0.000072 Time 0.050 Loss 0.6148 InfoNCE 0.6132 Triplet 0.0026
+Epoch [10][75/146] LR: 0.000072 Time 0.048 Loss 0.8259 InfoNCE 0.8223 Triplet 0.0061
+Epoch [10][100/146] LR: 0.000072 Time 0.035 Loss 0.6502 InfoNCE 0.6487 Triplet 0.0025
+Epoch [10][125/146] LR: 0.000072 Time 0.039 Loss 0.5530 InfoNCE 0.5523 Triplet 0.0012
+验证中...
+Text to Image: R@1: 27.55%, R@5: 71.35%, R@10: 87.33%
+Image to Text: R@1: 30.03%, R@5: 74.38%, R@10: 85.67%
+平均 R@1: 28.79%
+R-sum: 376.31
+💾 最佳模型 - R-sum: 376.31, 平均R@1: 28.79%
+当前最佳: 28.79%
+改进: -8.68%
+距离70%: 41.21%
+
+Epoch 11/120
+--------------------------------------------------
+Epoch [11][0/146] LR: 0.000070 Time 0.044 Loss 0.5257 InfoNCE 0.5251 Triplet 0.0010
+Epoch [11][25/146] LR: 0.000070 Time 0.036 Loss 0.5321 InfoNCE 0.5314 Triplet 0.0012
+Epoch [11][50/146] LR: 0.000070 Time 0.037 Loss 0.6548 InfoNCE 0.6533 Triplet 0.0024
+Epoch [11][75/146] LR: 0.000070 Time 0.039 Loss 0.7959 InfoNCE 0.7929 Triplet 0.0049
+Epoch [11][100/146] LR: 0.000070 Time 0.039 Loss 0.5490 InfoNCE 0.5480 Triplet 0.0017
+Epoch [11][125/146] LR: 0.000070 Time 0.036 Loss 0.7149 InfoNCE 0.7125 Triplet 0.0040
+验证中...
+Text to Image: R@1: 28.10%, R@5: 73.28%, R@10: 88.43%
+Image to Text: R@1: 31.13%, R@5: 77.13%, R@10: 88.43%
+平均 R@1: 29.61%
+R-sum: 386.50
+💾 最佳模型 - R-sum: 386.50, 平均R@1: 29.61%
+当前最佳: 29.61%
+改进: -7.86%
+距离70%: 40.39%
+
+Epoch 12/120
+--------------------------------------------------
+Epoch [12][0/146] LR: 0.000067 Time 0.039 Loss 0.4955 InfoNCE 0.4949 Triplet 0.0010
+Epoch [12][25/146] LR: 0.000067 Time 0.041 Loss 0.7096 InfoNCE 0.7074 Triplet 0.0036
+Epoch [12][50/146] LR: 0.000067 Time 0.048 Loss 0.8183 InfoNCE 0.8153 Triplet 0.0050
+Epoch [12][75/146] LR: 0.000067 Time 0.041 Loss 0.5039 InfoNCE 0.5034 Triplet 0.0008
+Epoch [12][100/146] LR: 0.000067 Time 0.045 Loss 0.8154 InfoNCE 0.8123 Triplet 0.0051
+Epoch [12][125/146] LR: 0.000067 Time 0.045 Loss 0.5978 InfoNCE 0.5966 Triplet 0.0020
+验证中...
+Text to Image: R@1: 30.58%, R@5: 75.48%, R@10: 89.53%
+Image to Text: R@1: 30.03%, R@5: 74.93%, R@10: 88.15%
+平均 R@1: 30.30%
+R-sum: 388.71
+💾 最佳模型 - R-sum: 388.71, 平均R@1: 30.30%
+当前最佳: 30.30%
+改进: -7.17%
+距离70%: 39.70%
+
+Epoch 13/120
+--------------------------------------------------
+Epoch [13][0/146] LR: 0.000064 Time 0.042 Loss 0.8579 InfoNCE 0.8544 Triplet 0.0058
+Epoch [13][25/146] LR: 0.000064 Time 0.036 Loss 0.5274 InfoNCE 0.5268 Triplet 0.0011
+Epoch [13][50/146] LR: 0.000064 Time 0.046 Loss 0.5096 InfoNCE 0.5089 Triplet 0.0011
+Epoch [13][75/146] LR: 0.000064 Time 0.037 Loss 0.7820 InfoNCE 0.7794 Triplet 0.0043
+Epoch [13][100/146] LR: 0.000064 Time 0.041 Loss 0.5772 InfoNCE 0.5762 Triplet 0.0017
+Epoch [13][125/146] LR: 0.000064 Time 0.046 Loss 0.7104 InfoNCE 0.7080 Triplet 0.0039
+验证中...
+Text to Image: R@1: 28.93%, R@5: 75.21%, R@10: 90.08%
+Image to Text: R@1: 34.44%, R@5: 79.34%, R@10: 92.29%
+平均 R@1: 31.68%
+R-sum: 400.28
+💾 最佳模型 - R-sum: 400.28, 平均R@1: 31.68%
+当前最佳: 31.68%
+改进: -5.79%
+距离70%: 38.32%
+
+Epoch 14/120
+--------------------------------------------------
+Epoch [14][0/146] LR: 0.000060 Time 0.043 Loss 0.4450 InfoNCE 0.4448 Triplet 0.0003
+Epoch [14][25/146] LR: 0.000060 Time 0.042 Loss 0.5401 InfoNCE 0.5391 Triplet 0.0016
+Epoch [14][50/146] LR: 0.000060 Time 0.046 Loss 0.5699 InfoNCE 0.5690 Triplet 0.0015
+Epoch [14][75/146] LR: 0.000060 Time 0.038 Loss 0.7368 InfoNCE 0.7345 Triplet 0.0038
+Epoch [14][100/146] LR: 0.000060 Time 0.048 Loss 0.4218 InfoNCE 0.4217 Triplet 0.0002
+Epoch [14][125/146] LR: 0.000060 Time 0.041 Loss 0.6714 InfoNCE 0.6696 Triplet 0.0030
+验证中...
+Text to Image: R@1: 31.40%, R@5: 74.93%, R@10: 89.26%
+Image to Text: R@1: 28.93%, R@5: 77.96%, R@10: 90.08%
+平均 R@1: 30.17%
+R-sum: 392.56
+当前最佳: 31.68%
+改进: -5.79%
+距离70%: 38.32%
+
+Epoch 15/120
+--------------------------------------------------
+Epoch [15][0/146] LR: 0.000056 Time 0.042 Loss 0.5433 InfoNCE 0.5425 Triplet 0.0014
+Epoch [15][25/146] LR: 0.000056 Time 0.038 Loss 0.5644 InfoNCE 0.5634 Triplet 0.0017
+Epoch [15][50/146] LR: 0.000056 Time 0.034 Loss 1.0336 InfoNCE 1.0287 Triplet 0.0081
+Epoch [15][75/146] LR: 0.000056 Time 0.036 Loss 0.6254 InfoNCE 0.6241 Triplet 0.0022
+Epoch [15][100/146] LR: 0.000056 Time 0.037 Loss 0.8534 InfoNCE 0.8503 Triplet 0.0051
+Epoch [15][125/146] LR: 0.000056 Time 0.046 Loss 0.6142 InfoNCE 0.6128 Triplet 0.0024
+验证中...
+Text to Image: R@1: 30.85%, R@5: 77.69%, R@10: 90.63%
+Image to Text: R@1: 29.20%, R@5: 79.06%, R@10: 91.46%
+平均 R@1: 30.03%
+R-sum: 398.90
+当前最佳: 31.68%
+改进: -5.79%
+距离70%: 38.32%
+
+Epoch 16/120
+--------------------------------------------------
+Epoch [16][0/146] LR: 0.000052 Time 0.033 Loss 0.6445 InfoNCE 0.6427 Triplet 0.0029
+Epoch [16][25/146] LR: 0.000052 Time 0.038 Loss 0.5228 InfoNCE 0.5221 Triplet 0.0011
+Epoch [16][50/146] LR: 0.000052 Time 0.043 Loss 0.4745 InfoNCE 0.4741 Triplet 0.0006
+Epoch [16][75/146] LR: 0.000052 Time 0.044 Loss 0.6139 InfoNCE 0.6124 Triplet 0.0025
+Epoch [16][100/146] LR: 0.000052 Time 0.039 Loss 0.6123 InfoNCE 0.6110 Triplet 0.0021
+Epoch [16][125/146] LR: 0.000052 Time 0.038 Loss 0.7643 InfoNCE 0.7617 Triplet 0.0044
+验证中...
+Text to Image: R@1: 30.30%, R@5: 77.69%, R@10: 90.36%
+Image to Text: R@1: 33.61%, R@5: 81.54%, R@10: 91.74%
+平均 R@1: 31.96%
+R-sum: 405.23
+💾 最佳模型 - R-sum: 405.23, 平均R@1: 31.96%
+当前最佳: 31.96%
+改进: -5.51%
+距离70%: 38.04%
+
+Epoch 17/120
+--------------------------------------------------
+Epoch [17][0/146] LR: 0.000048 Time 0.040 Loss 0.6314 InfoNCE 0.6298 Triplet 0.0026
+Epoch [17][25/146] LR: 0.000048 Time 0.038 Loss 0.5542 InfoNCE 0.5532 Triplet 0.0018
+Epoch [17][50/146] LR: 0.000048 Time 0.042 Loss 0.7159 InfoNCE 0.7134 Triplet 0.0041
+Epoch [17][75/146] LR: 0.000048 Time 0.045 Loss 0.5479 InfoNCE 0.5470 Triplet 0.0015
+Epoch [17][100/146] LR: 0.000048 Time 0.039 Loss 0.6090 InfoNCE 0.6075 Triplet 0.0025
+Epoch [17][125/146] LR: 0.000048 Time 0.039 Loss 0.5072 InfoNCE 0.5066 Triplet 0.0010
+验证中...
+Text to Image: R@1: 31.40%, R@5: 76.03%, R@10: 89.26%
+Image to Text: R@1: 33.33%, R@5: 81.54%, R@10: 89.81%
+平均 R@1: 32.37%
+R-sum: 401.38
+💾 最佳模型 - R-sum: 401.38, 平均R@1: 32.37%
+当前最佳: 32.37%
+改进: -5.10%
+距离70%: 37.63%
+
+Epoch 18/120
+--------------------------------------------------
+Epoch [18][0/146] LR: 0.000044 Time 0.041 Loss 0.6021 InfoNCE 0.6004 Triplet 0.0028
+Epoch [18][25/146] LR: 0.000044 Time 0.046 Loss 0.5440 InfoNCE 0.5430 Triplet 0.0017
+Epoch [18][50/146] LR: 0.000044 Time 0.040 Loss 0.5219 InfoNCE 0.5212 Triplet 0.0012
+Epoch [18][75/146] LR: 0.000044 Time 0.037 Loss 0.6155 InfoNCE 0.6141 Triplet 0.0024
+Epoch [18][100/146] LR: 0.000044 Time 0.040 Loss 0.6918 InfoNCE 0.6896 Triplet 0.0038
+Epoch [18][125/146] LR: 0.000044 Time 0.038 Loss 0.7156 InfoNCE 0.7132 Triplet 0.0040
+验证中...
+Text to Image: R@1: 32.78%, R@5: 78.51%, R@10: 91.18%
+Image to Text: R@1: 32.51%, R@5: 80.72%, R@10: 90.91%
+平均 R@1: 32.64%
+R-sum: 406.61
+💾 最佳模型 - R-sum: 406.61, 平均R@1: 32.64%
+当前最佳: 32.64%
+改进: -4.83%
+距离70%: 37.36%
+
+Epoch 19/120
+--------------------------------------------------
+Epoch [19][0/146] LR: 0.000040 Time 0.042 Loss 0.6809 InfoNCE 0.6785 Triplet 0.0040
+Epoch [19][25/146] LR: 0.000040 Time 0.039 Loss 0.4963 InfoNCE 0.4957 Triplet 0.0011
+Epoch [19][50/146] LR: 0.000040 Time 0.044 Loss 0.5169 InfoNCE 0.5160 Triplet 0.0016
+Epoch [19][75/146] LR: 0.000040 Time 0.042 Loss 0.4605 InfoNCE 0.4600 Triplet 0.0008
+Epoch [19][100/146] LR: 0.000040 Time 0.036 Loss 0.5711 InfoNCE 0.5701 Triplet 0.0016
+Epoch [19][125/146] LR: 0.000040 Time 0.050 Loss 0.6937 InfoNCE 0.6915 Triplet 0.0037
+验证中...
+Text to Image: R@1: 31.96%, R@5: 77.41%, R@10: 90.36%
+Image to Text: R@1: 31.13%, R@5: 78.79%, R@10: 92.01%
+平均 R@1: 31.54%
+R-sum: 401.65
+当前最佳: 32.64%
+改进: -4.83%
+距离70%: 37.36%
+
+Epoch 20/120
+--------------------------------------------------
+Epoch [20][0/146] LR: 0.000036 Time 0.034 Loss 0.6135 InfoNCE 0.6119 Triplet 0.0026
+Epoch [20][25/146] LR: 0.000036 Time 0.045 Loss 0.6263 InfoNCE 0.6245 Triplet 0.0029
+Epoch [20][50/146] LR: 0.000036 Time 0.047 Loss 0.7083 InfoNCE 0.7063 Triplet 0.0035
+Epoch [20][75/146] LR: 0.000036 Time 0.036 Loss 0.4894 InfoNCE 0.4888 Triplet 0.0010
+Epoch [20][100/146] LR: 0.000036 Time 0.048 Loss 0.5570 InfoNCE 0.5557 Triplet 0.0021
+Epoch [20][125/146] LR: 0.000036 Time 0.049 Loss 0.5433 InfoNCE 0.5425 Triplet 0.0014
+验证中...
+Text to Image: R@1: 31.96%, R@5: 78.79%, R@10: 91.46%
+Image to Text: R@1: 33.06%, R@5: 80.99%, R@10: 91.74%
+平均 R@1: 32.51%
+R-sum: 407.99
+当前最佳: 32.64%
+改进: -4.83%
+距离70%: 37.36%
+
+Epoch 21/120
+--------------------------------------------------
+Epoch [21][0/146] LR: 0.000032 Time 0.036 Loss 0.5594 InfoNCE 0.5584 Triplet 0.0017
+Epoch [21][25/146] LR: 0.000032 Time 0.043 Loss 0.6981 InfoNCE 0.6962 Triplet 0.0031
+Epoch [21][50/146] LR: 0.000032 Time 0.043 Loss 0.5101 InfoNCE 0.5093 Triplet 0.0013
+Epoch [21][75/146] LR: 0.000032 Time 0.042 Loss 0.4857 InfoNCE 0.4851 Triplet 0.0011
+Epoch [21][100/146] LR: 0.000032 Time 0.045 Loss 0.6048 InfoNCE 0.6035 Triplet 0.0023
+Epoch [21][125/146] LR: 0.000032 Time 0.044 Loss 0.6268 InfoNCE 0.6252 Triplet 0.0027
+验证中...
+Text to Image: R@1: 32.78%, R@5: 79.06%, R@10: 91.18%
+Image to Text: R@1: 34.71%, R@5: 81.82%, R@10: 92.29%
+平均 R@1: 33.75%
+R-sum: 411.85
+💾 最佳模型 - R-sum: 411.85, 平均R@1: 33.75%
+当前最佳: 33.75%
+改进: -3.72%
+距离70%: 36.25%
+
+Epoch 22/120
+--------------------------------------------------
+Epoch [22][0/146] LR: 0.000028 Time 0.042 Loss 0.6582 InfoNCE 0.6565 Triplet 0.0029
+Epoch [22][25/146] LR: 0.000028 Time 0.040 Loss 0.6575 InfoNCE 0.6557 Triplet 0.0029
+Epoch [22][50/146] LR: 0.000028 Time 0.040 Loss 0.4586 InfoNCE 0.4581 Triplet 0.0008
+Epoch [22][75/146] LR: 0.000028 Time 0.037 Loss 0.4157 InfoNCE 0.4155 Triplet 0.0002
+Epoch [22][100/146] LR: 0.000028 Time 0.039 Loss 0.4859 InfoNCE 0.4854 Triplet 0.0010
+Epoch [22][125/146] LR: 0.000028 Time 0.049 Loss 0.6200 InfoNCE 0.6186 Triplet 0.0024
+验证中...
+Text to Image: R@1: 33.06%, R@5: 78.79%, R@10: 89.81%
+Image to Text: R@1: 32.78%, R@5: 81.54%, R@10: 91.18%
+平均 R@1: 32.92%
+R-sum: 407.16
+当前最佳: 33.75%
+改进: -3.72%
+距离70%: 36.25%
+
+Epoch 23/120
+--------------------------------------------------
+Epoch [23][0/146] LR: 0.000024 Time 0.050 Loss 0.4629 InfoNCE 0.4624 Triplet 0.0008
+Epoch [23][25/146] LR: 0.000024 Time 0.037 Loss 0.7105 InfoNCE 0.7080 Triplet 0.0040
+Epoch [23][50/146] LR: 0.000024 Time 0.044 Loss 0.6759 InfoNCE 0.6742 Triplet 0.0028
+Epoch [23][75/146] LR: 0.000024 Time 0.041 Loss 0.6208 InfoNCE 0.6193 Triplet 0.0025
+Epoch [23][100/146] LR: 0.000024 Time 0.041 Loss 0.5290 InfoNCE 0.5281 Triplet 0.0016
+Epoch [23][125/146] LR: 0.000024 Time 0.039 Loss 0.5564 InfoNCE 0.5553 Triplet 0.0018
+验证中...
+Text to Image: R@1: 33.61%, R@5: 79.34%, R@10: 90.36%
+Image to Text: R@1: 34.99%, R@5: 80.72%, R@10: 92.01%
+平均 R@1: 34.30%
+R-sum: 411.02
+💾 最佳模型 - R-sum: 411.02, 平均R@1: 34.30%
+当前最佳: 34.30%
+改进: -3.17%
+距离70%: 35.70%
+
+Epoch 24/120
+--------------------------------------------------
+Epoch [24][0/146] LR: 0.000020 Time 0.047 Loss 0.4862 InfoNCE 0.4856 Triplet 0.0010
+Epoch [24][25/146] LR: 0.000020 Time 0.037 Loss 0.5950 InfoNCE 0.5937 Triplet 0.0023
+Epoch [24][50/146] LR: 0.000020 Time 0.042 Loss 0.6809 InfoNCE 0.6786 Triplet 0.0038
+Epoch [24][75/146] LR: 0.000020 Time 0.040 Loss 0.5378 InfoNCE 0.5367 Triplet 0.0018
+Epoch [24][100/146] LR: 0.000020 Time 0.045 Loss 0.4807 InfoNCE 0.4801 Triplet 0.0009
+Epoch [24][125/146] LR: 0.000020 Time 0.040 Loss 0.5009 InfoNCE 0.5001 Triplet 0.0013
+验证中...
+Text to Image: R@1: 33.88%, R@5: 79.61%, R@10: 91.18%
+Image to Text: R@1: 40.50%, R@5: 83.20%, R@10: 92.01%
+平均 R@1: 37.19%
+R-sum: 420.39
+💾 最佳模型 - R-sum: 420.39, 平均R@1: 37.19%
+当前最佳: 37.19%
+改进: -0.28%
+距离70%: 32.81%
+
+Epoch 25/120
+--------------------------------------------------
+Epoch [25][0/146] LR: 0.000016 Time 0.043 Loss 0.4712 InfoNCE 0.4707 Triplet 0.0008
+Epoch [25][25/146] LR: 0.000016 Time 0.041 Loss 0.5788 InfoNCE 0.5774 Triplet 0.0024
+Epoch [25][50/146] LR: 0.000016 Time 0.042 Loss 0.5002 InfoNCE 0.4997 Triplet 0.0010
+Epoch [25][75/146] LR: 0.000016 Time 0.035 Loss 0.4645 InfoNCE 0.4640 Triplet 0.0008
+Epoch [25][100/146] LR: 0.000016 Time 0.048 Loss 0.4026 InfoNCE 0.4025 Triplet 0.0001
+Epoch [25][125/146] LR: 0.000016 Time 0.041 Loss 0.4036 InfoNCE 0.4036 Triplet 0.0000
+验证中...
+Text to Image: R@1: 33.33%, R@5: 79.06%, R@10: 91.46%
+Image to Text: R@1: 33.88%, R@5: 82.37%, R@10: 91.18%
+平均 R@1: 33.61%
+R-sum: 411.29
+当前最佳: 37.19%
+改进: -0.28%
+距离70%: 32.81%
+
+Epoch 26/120
+--------------------------------------------------
+Epoch [26][0/146] LR: 0.000013 Time 0.036 Loss 0.5373 InfoNCE 0.5362 Triplet 0.0018
+Epoch [26][25/146] LR: 0.000013 Time 0.038 Loss 0.4256 InfoNCE 0.4254 Triplet 0.0004
+Epoch [26][50/146] LR: 0.000013 Time 0.044 Loss 0.4526 InfoNCE 0.4522 Triplet 0.0007
+Epoch [26][75/146] LR: 0.000013 Time 0.038 Loss 0.4752 InfoNCE 0.4746 Triplet 0.0009
+Epoch [26][100/146] LR: 0.000013 Time 0.037 Loss 0.5629 InfoNCE 0.5616 Triplet 0.0021
+Epoch [26][125/146] LR: 0.000013 Time 0.035 Loss 0.5719 InfoNCE 0.5706 Triplet 0.0022
+验证中...
+Text to Image: R@1: 31.96%, R@5: 79.61%, R@10: 92.01%
+Image to Text: R@1: 33.33%, R@5: 81.27%, R@10: 92.29%
+平均 R@1: 32.64%
+R-sum: 410.47
+当前最佳: 37.19%
+改进: -0.28%
+距离70%: 32.81%
+
+Epoch 27/120
+--------------------------------------------------
+Epoch [27][0/146] LR: 0.000010 Time 0.033 Loss 0.5587 InfoNCE 0.5576 Triplet 0.0019
+Epoch [27][25/146] LR: 0.000010 Time 0.040 Loss 0.5083 InfoNCE 0.5076 Triplet 0.0012
+Epoch [27][50/146] LR: 0.000010 Time 0.044 Loss 0.3972 InfoNCE 0.3972 Triplet 0.0000
+Epoch [27][75/146] LR: 0.000010 Time 0.042 Loss 0.4730 InfoNCE 0.4725 Triplet 0.0008
+Epoch [27][100/146] LR: 0.000010 Time 0.053 Loss 0.5322 InfoNCE 0.5308 Triplet 0.0023
+Epoch [27][125/146] LR: 0.000010 Time 0.038 Loss 0.5404 InfoNCE 0.5392 Triplet 0.0019
+验证中...
+Text to Image: R@1: 33.33%, R@5: 80.17%, R@10: 91.74%
+Image to Text: R@1: 33.33%, R@5: 83.47%, R@10: 92.56%
+平均 R@1: 33.33%
+R-sum: 414.60
+当前最佳: 37.19%
+改进: -0.28%
+距离70%: 32.81%
+
+Epoch 28/120
+--------------------------------------------------
+Epoch [28][0/146] LR: 0.000008 Time 0.042 Loss 0.6176 InfoNCE 0.6157 Triplet 0.0032
+Epoch [28][25/146] LR: 0.000008 Time 0.036 Loss 0.4787 InfoNCE 0.4781 Triplet 0.0009
+Epoch [28][50/146] LR: 0.000008 Time 0.050 Loss 0.5847 InfoNCE 0.5833 Triplet 0.0024
+Epoch [28][75/146] LR: 0.000008 Time 0.043 Loss 0.4945 InfoNCE 0.4936 Triplet 0.0014
+Epoch [28][100/146] LR: 0.000008 Time 0.038 Loss 0.6910 InfoNCE 0.6886 Triplet 0.0039
+Epoch [28][125/146] LR: 0.000008 Time 0.042 Loss 0.5607 InfoNCE 0.5595 Triplet 0.0020
+验证中...
+Text to Image: R@1: 33.06%, R@5: 80.44%, R@10: 91.18%
+Image to Text: R@1: 34.99%, R@5: 82.64%, R@10: 92.84%
+平均 R@1: 34.02%
+R-sum: 415.15
+当前最佳: 37.19%
+改进: -0.28%
+距离70%: 32.81%
+
+Epoch 29/120
+--------------------------------------------------
+Epoch [29][0/146] LR: 0.000005 Time 0.064 Loss 0.4303 InfoNCE 0.4299 Triplet 0.0006
+Epoch [29][25/146] LR: 0.000005 Time 0.050 Loss 0.6858 InfoNCE 0.6835 Triplet 0.0038
+Epoch [29][50/146] LR: 0.000005 Time 0.040 Loss 0.5169 InfoNCE 0.5161 Triplet 0.0014
+Epoch [29][75/146] LR: 0.000005 Time 0.042 Loss 0.5152 InfoNCE 0.5143 Triplet 0.0015
+Epoch [29][100/146] LR: 0.000005 Time 0.039 Loss 0.5553 InfoNCE 0.5543 Triplet 0.0017
+Epoch [29][125/146] LR: 0.000005 Time 0.041 Loss 0.5551 InfoNCE 0.5540 Triplet 0.0018
+验证中...
+Text to Image: R@1: 33.61%, R@5: 80.17%, R@10: 91.18%
+Image to Text: R@1: 38.02%, R@5: 83.75%, R@10: 92.56%
+平均 R@1: 35.81%
+R-sum: 419.28
+当前最佳: 37.19%
+改进: -0.28%
+距离70%: 32.81%
+
+Epoch 30/120
+--------------------------------------------------
+Epoch [30][0/146] LR: 0.000003 Time 0.051 Loss 0.4833 InfoNCE 0.4827 Triplet 0.0010
+Epoch [30][25/146] LR: 0.000003 Time 0.049 Loss 0.5431 InfoNCE 0.5421 Triplet 0.0017
+Epoch [30][50/146] LR: 0.000003 Time 0.040 Loss 0.6909 InfoNCE 0.6887 Triplet 0.0036
+Epoch [30][75/146] LR: 0.000003 Time 0.035 Loss 0.5286 InfoNCE 0.5276 Triplet 0.0017
+Epoch [30][100/146] LR: 0.000003 Time 0.033 Loss 0.5736 InfoNCE 0.5721 Triplet 0.0025
+Epoch [30][125/146] LR: 0.000003 Time 0.031 Loss 0.4643 InfoNCE 0.4638 Triplet 0.0009
+验证中...
+Text to Image: R@1: 33.61%, R@5: 80.72%, R@10: 91.74%
